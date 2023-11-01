@@ -1,3 +1,4 @@
+
 """
 This module takes care of starting the API Server, Loading the DB and Adding the endpoints
 """
@@ -44,6 +45,16 @@ def handle_hello():
     }
 
     return jsonify(response_body), 200
+
+# @app.route('/people, methods=['GET'])
+# def get_people():
+#     people= Person()
+#     people= person.queryall()
+#     return jsonify(list(map(lambda item.serialiaze(),people))), 200
+
+
+
+
 
 # this only runs if `$ python src/app.py` is executed
 if __name__ == '__main__':
